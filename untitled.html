@@ -1,0 +1,31 @@
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head>  
+    <title>Add new item in dropdown using jQuery</title>  
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.2.min.js" type="text/javascript"></script>  
+    <script type="text/javascript">  
+        $(function () {  
+            $("#btnClick").click(function () {  
+                var newCountry = $("#txtItem").val();  
+                if (newCountry.length > 0)  
+                    {  
+                    $("#ddlCountry").append($("<option>").val(newCountry).text(newCountry));  
+                    $("#txtItem").val("");  
+                   }  
+            });  
+        });  
+    </script>  
+</head>  
+<body>  
+    <div style="font-family:verdana;font-size:12px;">  
+   New Country: <input type="text" id="txtItem" />  
+ Country:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+&nbsp;&nbsp;&nbsp;&nbsp;  
+ <select id="ddlCountry">  
+ <option value="Pakistan">Pakistan</option>  
+ <option value="China">China</option>  
+ <option value="United States">United States</option>  
+ </select>  
+        <input id="btnClick" type="button" value=" Add Country " />  
+    </div>  
+</body>  
+</html>
