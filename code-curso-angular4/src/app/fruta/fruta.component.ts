@@ -6,6 +6,6 @@ import { Component } from "@angular/core";
 })
 
 export class FrutaComponent {
-    public nombre_componente:string = 'Componente de fruta';
-    public listado_frutas:string = 'Naranja y Manzana';
-}   
+    public nombre_componente = 'Fruit of component';
+    public listado_frutas = 'Orange and apple';
+}
