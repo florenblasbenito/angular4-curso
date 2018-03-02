@@ -7,5 +7,5 @@ import { Component } from "@angular/core";
 
 export class FrutaComponent {
     public nombre_componente = 'Fruit of component';
-    public listado_frutas = 'Orange and apple';
+    public listado_frutas = 'Orange and apple'; 
 }
