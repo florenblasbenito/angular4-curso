@@ -8,6 +8,7 @@ import { FrutaComponent } from './fruta/fruta.component';
 import { OrdenadorComponent } from './ordenador/teclado.component';
 import { CarComponent } from './car/car.component';
 import { InstrumentComponent } from './instrument/instrument.component';
+import { EmpleadoComponent } from './empleado/empleado.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { InstrumentComponent } from './instrument/instrument.component';
     FrutaComponent,
     OrdenadorComponent,
     CarComponent,
-    InstrumentComponent
+    InstrumentComponent,
+    EmpleadoComponent
   ],
   imports: [
     BrowserModule,
