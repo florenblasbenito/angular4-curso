@@ -10,6 +10,7 @@ import { CarComponent } from './car/car.component';
 import { InstrumentComponent } from './instrument/instrument.component';
 import { EmpleadoComponent } from './empleado/empleado.component';
 import { Machine3Component } from './machine3/machine3.component';
+import { DeveloperComponent } from './developer/developer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { Machine3Component } from './machine3/machine3.component';
     CarComponent,
     InstrumentComponent,
     EmpleadoComponent,
-    Machine3Component
+    Machine3Component,
+    DeveloperComponent
   ],
   imports: [
     BrowserModule,
