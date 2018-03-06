@@ -6,11 +6,11 @@ import { Empleado} from './empleado';
   templateUrl: './empleado.component.html',
   styleUrls: ['./empleado.component.css']
 })
-export class EmpleadoComponent {
+export class EmpleadoComponent implements OnInit {
 
   public titulo = 'Componentes Empleados';
-  public empleado:Empleado;
-  public trabajadores:Array<Empleado>;
+  public empleado: Empleado;
+  public trabajadores: Array<Empleado>;
 
   constructor() {
     this.empleado = new Empleado ('David Lopez', 45, 'Cocinero', true);
