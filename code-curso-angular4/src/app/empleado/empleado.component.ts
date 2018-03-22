@@ -30,4 +30,7 @@ export class EmpleadoComponent implements OnInit {
     console.log(this.empleado)
   }
 
+  cambiarExterno(valor){
+    this.trabajador_externo = valor;
+  }
 }
