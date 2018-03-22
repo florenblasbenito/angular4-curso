@@ -11,6 +11,7 @@ export class EmpleadoComponent implements OnInit {
   public titulo = 'Componentes Empleados';
   public empleado: Empleado;
   public trabajadores: Array<Empleado>;
+  public trabajador_externo:boolean;
 
   constructor() {
     this.empleado = new Empleado ('David Lopez', 45, 'Cocinero', true);
@@ -19,7 +20,7 @@ export class EmpleadoComponent implements OnInit {
       new Empleado('Ana Lopez', 25, 'Cocinera', true),
       new Empleado('Víctor Robles', 66, 'Programador', false)
     ];
-
+    this.trabajador_externo = false;
 
 
    }

@@ -1,13 +1,17 @@
-<h3>Empleado Estrella:</h3>
-
-<div>{{empleado.nombre}}</div>
-<div>{{empleado.edad}}</div>
+<h1 style="color:blue;">{{titulo}}</h1>
+<strong>Empleado estrella:</strong>
 
 
-<div>{{trabajadores[0].edad}}</div>
-<div>{{trabajadores[2].nombre}}</div>
-<div>{{trabajadores[1].nombre}}</div>
-<div>{{trabajadores[2].edad}}</div>
-<div>{{trabajadores[2].edad}}</div>
+<ul *ngIf="trabajador_externo == true">
+    <li>{{trabajadores[0].nombre}}</li>
+    <li>{{trabajadores[0].edad}}</li>
+    <li>{{trabajadores[0].cargo}}</li>
+    <li>{{trabajadores[0].contratado}}</li>
+</ul>
 
-
+<ul *ngIf="trabajador_externo == false">
+    <li>{{empleado.nombre}}</li>
+    <li>{{empleado.edad}}</li>
+    <li>{{empleado.cargo}}</li>
+    <li>{{empleado.contratado}}</li>
+</ul>
