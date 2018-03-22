@@ -8,7 +8,8 @@
     <li>{{trabajadores[0].nombre}}</li>
     <li>{{trabajadores[0].edad}}</li>
     <li>{{trabajadores[0].cargo}}</li>
-    <li>{{trabajadores[0].contratado}}</li>
+    <li *ngIf="trabajadores[0].contratado == true">Está contratado</li>
+    <li *ngIf="trabajadores[0].contratado == false">No está contratado</li>
 </ul>
 </div>
 
@@ -18,6 +19,7 @@
     <li>{{empleado.nombre}}</li>
     <li>{{empleado.edad}}</li>
     <li>{{empleado.cargo}}</li>
-    <li>{{empleado.contratado}}</li>
+    <li *ngIf="empleado.contratado == true">Está contratado</li>
+    <li *ngIf="empleado.contratado == false">No está contratado</li>
 </ul>
 </div>

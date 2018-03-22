@@ -16,7 +16,7 @@ export class EmpleadoComponent implements OnInit {
   constructor() {
     this.empleado = new Empleado ('David Lopez', 45, 'Cocinero', true);
     this.trabajadores = [
-      new Empleado('Manolo Martinez', 35, 'Administrativo', true),
+      new Empleado('Manolo Martinez', 35, 'Administrativo', false),
       new Empleado('Ana Lopez', 25, 'Cocinera', true),
       new Empleado('Víctor Robles', 66, 'Programador', false)
     ];
