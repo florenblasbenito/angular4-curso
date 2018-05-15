@@ -1,10 +1,10 @@
-import { CodeCursoAngular4Page } from './app.po';
+import { HelloWorldPage } from './app.po';
 
-describe('code-curso-angular4 App', function() {
-  let page: CodeCursoAngular4Page;
+describe('hello-world App', () => {
+  let page: HelloWorldPage;
 
   beforeEach(() => {
-    page = new CodeCursoAngular4Page();
+    page = new HelloWorldPage();
   });
 
   it('should display message saying app works', () => {
